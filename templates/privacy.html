@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+<div class="terms-container" style="max-width: 800px; margin: 4rem auto; padding: 0 2rem; line-height: 1.6; color: #444;">
+    <h1 style="font-family: 'DM Serif Display', serif; font-size: 2.5rem; margin-bottom: 1.5rem; color: #111;">Privacy Policy</h1>
+    <p style="margin-bottom: 1rem;">Last updated: September 16, 2026</p>
+
+    <section style="margin-bottom: 2rem;">
+        <h2 style="font-family: 'DM Serif Display', serif; font-size: 1.8rem; margin-bottom: 1rem; color: #222;">1. Data We Collect</h2>
+        <p>We collect information that you provide directly to us, such as your name, email address, and the financial transaction logs you enter into the app. We also collect basic technical information such as your browser type and IP address for security and performance optimization.</p>
+    </section>
+
+    <section style="margin-bottom: 2rem;">
+        <h2 style="font-family: 'DM Serif Display', serif; font-size: 1.8rem; margin-bottom: 1rem; color: #222;">2. How We Use Your Data</h2>
+        <p>Your data is used exclusively to provide the expense tracking service. We use your transaction logs to generate your spending reports and summaries. Your email is used for account management and authentication.</p>
+    </section>
+
+    <section style="margin-bottom: 2rem;">
+        <h2 style="font-family: 'DM Serif Display', serif; font-size: 1.8rem; margin-bottom: 1rem; color: #222;">3. Data Storage</h2>
+        <p>Your data is stored securely on our servers. We implement industry-standard encryption and security protocols to prevent unauthorized access. We only retain your data for as long as your account is active or as needed to provide the service.</p>
+    </section>
+
+    <section style="margin-bottom: 2rem;">
+        <h2 style="font-family: 'DM Serif Display', serif; font-size: 1.8rem; margin-bottom: 1rem; color: #222;">4. Third Party Services</h2>
+        <p>Spendly does not sell, trade, or otherwise transfer your personal data to outside parties. We may use trusted third-party infrastructure providers (such as hosting services) who are bound by strict confidentiality agreements.</p>
+    </section>
+
+    <section style="margin-bottom: 2rem;">
+        <h2 style="font-family: 'DM Serif Display', serif; font-size: 1.8rem; margin-bottom: 1rem; color: #222;">5. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy or wish to request the deletion of your data, please contact us at privacy@spendly.example.com.</p>
+    </section>
+
+    <div style="margin-top: 3rem; border-top: 1px solid #eee; padding-top: 1rem;">
+        <a href="{{ url_for('landing') }}" style="color: #666; text-decoration: none;">← Back to Home</a>
+    </div>
+</div>
+{% endblock %}
